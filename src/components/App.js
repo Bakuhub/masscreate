@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {getRandomData} from "../utils";
 import {ExcelTable} from "./ExcelTable";
 

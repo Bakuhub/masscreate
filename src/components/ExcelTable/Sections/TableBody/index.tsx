@@ -21,8 +21,8 @@ export const ExcelTableBody: React.FunctionComponent<Props> = ({
     return <tbody>
     {data.map((n, index) => (
         <tr key={index}>
-            {header.map((key, valueKey) => (
-                <TableCell key={valueKey} value={n[key]}/>
+            {header.map((propName, valueKey) => (
+                <TableCell columnIndex={index} key={valueKey} value={n[propName]}/>
             ))}
         </tr>
     ))}
